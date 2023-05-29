@@ -44,13 +44,15 @@ function App() {
   };
 
   const handleLoadMore = () => {
+    console.log(perPage + " " + total);
     if (perPage > total) {
       alert("No se encontraron mas resultados");
     } else {
       setIsLoading(true);
-      setPerPage((prevPerPage) => prevPerPage + 12);
       setPerPage((prevPerPage) => {
-        handleSearchSubmit(searchUser, prevPerPage);
+        const newPerPage = prevPerPage + 12;
+        handleSearchSubmit(searchUser, newPerPage);
+        return newPerPage;
       });
     }
   };
