@@ -1,0 +1,20 @@
+.modal {
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background-color: rgba(17, 17, 17, .7411764706);
+    z-index: 9999;
+
+}
+
+.overlay img {
+    width: 70%;
+    height: 100vh;
+}
+
+.modal__close {
+    opacity: 0;
+}
