@@ -1,4 +1,4 @@
-import styles from "./SearchBar.module.css";
+import styles from "./Searchbar.module.css";
 import PropTypes from "prop-types";
 
 const Searchbar = ({ handleSearchSubmit, search }) => {
