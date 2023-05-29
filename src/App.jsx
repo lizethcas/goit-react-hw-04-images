@@ -72,7 +72,7 @@ function App() {
         />
       )}
 
-      {data.length != 0 && <Button handleLoadMore={handleLoadMore} />}
+      {data.length !== 0 && <Button handleLoadMore={handleLoadMore} />}
 
       {isOpen && <Modal selectedImage={selectedImage} handleModal={close} />}
     </>
